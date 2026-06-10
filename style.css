@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #f4f9f0;
+    color: #1e3a2f;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #2c5e2e, #1e3a2f);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.intro {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-left: 8px solid #4caf50;
+}
+
+.intro h2 {
+    color: #2c5e2e;
+    margin-bottom: 15px;
+}
+
+.praticas h2, .interativo h2 {
+    color: #2c5e2e;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    border-top: 6px solid #8bc34a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #1e3a2f;
+    margin-bottom: 10px;
+}
+
+.interativo {
+    background: #e8f5e9;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #2e7d32;
+    transform: scale(1.02);
+}
+
+.resposta {
+    background: #fff3e0;
+    border-radius: 20px;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #bf6f00;
+    border-left: 5px solid #ffa000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #1e3a2f;
+    color: #cfd8c5;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
